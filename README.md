@@ -1,1 +1,3 @@
-# schematic-o-matic
+# Schematic-o-matic
+
+Coming soon!
