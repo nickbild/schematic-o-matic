@@ -24,11 +24,21 @@ For clarity, the above data would correspond to this simple circuit:
 
 ![](https://github.com/nickbild/schematic-o-matic/raw/main/media/breadboard_populated_annotated_sm.jpg)
 
-To determine the location of all component pins on the breadboard, the script parses the associated KiCad library file.  The components are added to a KiCad schematic (`EESchema Schematic File Version 4` format), after which the wires are then added, according to the connections information collected through continuity testing, with the help again of KiCad library files to determine the locations of all pins to place wires in the correct locations.
+To determine the location of all component pins on the breadboard, the script parses the associated KiCad library file.  The components are added to a KiCad schematic (`EESchema Schematic File Version 4` format), after which the wires are then added, according to the connections information collected through continuity testing, with the help again of KiCad library files to determine the locations of all pins to place wires in the correct locations.  The plain text, open formats used by KiCad made this integration possible.
 
 The end result of running Schematic-o-matic on the above circuit is this KiCad schematic:
 
 TODO: insert schematic here
+
+## Limitations
+
+For continuity testing to be accurate, certain components need to be removed.  While this is inconvenient, I believe that the benefit of having all wires mapped out so quickly (and guaranteed to be error free!) is still a big win.  I have built a number of very complex breadboard circuits that took days to trace all the wires for the schematic (then cross my fingers hoping I didn't make even one mistake).  A tool like this would have saved me many, many hours of unpleasant work.
+
+The schematics will be accurate, but may not be pretty.  I have implemented wires as straight lines between connection points.  I think they could be made to run parallel to one another, rather than randomly overlap, it would just take a more complex algorithm with some awareness of other wiring.
+
+For this prototype, I have focused on ICs.  Adding other components would be possible in principle using the same basic approach of asking the user for key points, and collecting the bulk of the information from KiCad library files.  Again, it's just a matter of putting more time into it.
+
+While not necessarily a limitaiton, the current text-based interface is a bit crude.  A graphic interface that allows a library of components to be drag-and-dropped onto a virtual breadboard would make the process more intuitive, I believe.
 
 ## Media
 
