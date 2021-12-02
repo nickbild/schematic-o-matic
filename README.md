@@ -6,7 +6,7 @@ Schematic-o-matic automatically draws a KiCad schematic for a circuit prototyped
 
 ## How It Works
 
-The first step in the process is to use a specially instrumented breadboard to build your circuit on.  Each continuous condictive region on the breadboard has a wire soldered to it on the underside of the breadboard.  This allows for a methodical test for electrical continuity between each region, which was accomplished by using an Arduino Due [code here](https://github.com/nickbild/schematic-o-matic/tree/main/connection_tester).
+The first step in the process is to use a specially instrumented breadboard to build your circuit on.  Each continuous condictive region on the breadboard has a wire soldered to it on the underside of the breadboard.  This allows for a methodical test for electrical continuity between each region, which was accomplished by using an Arduino Due ([code here](https://github.com/nickbild/schematic-o-matic/tree/main/connection_tester)).
 
 Because certain components (e.g. ICs) can cause false positives for connections between regions due to internal conductances, they must be removed from the board before running the Arduino code.  The output of the code is a map of the electrical connections between regions (i.e. wire placements).
 
