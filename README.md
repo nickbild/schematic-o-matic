@@ -22,6 +22,10 @@ Breadboard circuit with components removed:
 
 ## Bill of Materials
 
+- 1 x Arduino Due (or Mega, or similar)
+- 1 x breadboard
+- Wires
+
 ## About the Author
 
 [Nick A. Bild, MS](https://nickbild79.firebaseapp.com/#!/)
