@@ -38,7 +38,7 @@ The schematics will be accurate, but may not be pretty.  I have implemented wire
 
 For this prototype, I have focused on ICs.  Adding other components would be possible in principle using the same basic approach of asking the user for key points, and collecting the bulk of the information from KiCad library files.  Again, it's just a matter of putting more time into it.
 
-The protoype design uses a lot of pins (one for each conductive region on the breadboard) to keep things simple.  For larger designs, that's not reasonable.  Some type of multiplexing would need to be implemented.
+The protoype design uses a lot of pins (one for each conductive region on the breadboard) for continuity testing to keep things simple.  For larger designs, that's not reasonable.  Some type of multiplexing would need to be implemented.
 
 While not necessarily a limitaiton, the current text-based interface is a bit crude.  A graphic interface that allows a library of components to be drag-and-dropped onto a virtual breadboard would make the process more intuitive, I believe.
 
