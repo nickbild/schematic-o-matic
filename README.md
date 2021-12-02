@@ -24,7 +24,7 @@ For clarity, the above data would correspond to this simple circuit:
 
 ![](https://github.com/nickbild/schematic-o-matic/raw/main/media/breadboard_populated_annotated_sm.jpg)
 
-To determine the location of all component pins on the breadboard, the script parses the associated KiCad library file.  The components are added to a KiCad schematic (`EESchema Schematic File Version 4` format), after which the wires are then added, according to the connections information collected through continuity testing, with the help again of KiCad library files to determine the locations of all pins to place wires in the correct locations.  The plain text, open formats used by KiCad made this integration possible.
+To determine the location of all component pins (with respect to the specified pin 1) on the breadboard, the script parses the associated KiCad library file.  The components are added to a KiCad schematic (`EESchema Schematic File Version 4` format), after which the wires are then added, according to the connections information collected through continuity testing, with the help again of KiCad library files to determine the locations of all pins to place wires in the correct locations.  The plain text, open formats used by KiCad made this integration possible.
 
 The end result of running Schematic-o-matic on the above circuit is this KiCad schematic:
 
