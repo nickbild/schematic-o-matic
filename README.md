@@ -6,7 +6,7 @@ Schematic-o-matic automatically draws a KiCad schematic for a circuit prototyped
 
 ## How It Works
 
-The first step in the process is to use a specially instrumented breadboard to build your circuit on.  Each continuous condictive region on the breadboard has a wire soldered to it on the underside of the breadboard.  This allows for a methodical test for electrical continuity between each region, which was accomplished by using an Arduino Due ([code here](https://github.com/nickbild/schematic-o-matic/tree/main/connection_tester)).
+The first step in the process is to use a specially instrumented breadboard to build your circuit on.  Each continuous conductive region on the breadboard has a wire soldered to it on the underside of the breadboard.  This allows for a methodical test for electrical continuity between each region, which was accomplished by using an Arduino Due ([code here](https://github.com/nickbild/schematic-o-matic/tree/main/connection_tester)).
 
 Because certain components (e.g. ICs) can cause false positives for connections between regions due to internal conductances, they must be removed from the board before running the Arduino code.  The output of the code is a map of the electrical connections between regions (i.e. wire placements).
 
@@ -38,9 +38,9 @@ The schematics will be accurate, but may not be pretty.  I have implemented wire
 
 For this prototype, I have focused on ICs.  Adding other components would be possible in principle using the same basic approach of asking the user for key points, and collecting the bulk of the information from KiCad library files.  Again, it's just a matter of putting more time into it.
 
-The protoype design uses a lot of pins (one for each conductive region on the breadboard) for continuity testing to keep things simple.  For larger designs, that's not reasonable.  Some type of multiplexing would need to be implemented.
+The prototype design uses a lot of pins (one for each conductive region on the breadboard) for continuity testing to keep things simple.  For larger designs, that's not reasonable.  Some type of multiplexing would need to be implemented.
 
-While not necessarily a limitaiton, the current text-based interface is a bit crude.  A graphic interface that allows a library of components to be drag-and-dropped onto a virtual breadboard would make the process more intuitive, I believe.
+While not necessarily a limitation, the current text-based interface is a bit crude.  A graphic interface that allows a library of components to be drag-and-dropped onto a virtual breadboard would make the process more intuitive, I believe.
 
 ## Media
 
