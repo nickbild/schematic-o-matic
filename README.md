@@ -28,7 +28,7 @@ To determine the location of all component pins on the breadboard, the script pa
 
 The end result of running Schematic-o-matic on the above circuit is this KiCad schematic:
 
-TODO: insert schematic here
+![](https://github.com/nickbild/schematic-o-matic/raw/main/media/schematic.png)
 
 ## Limitations
 
