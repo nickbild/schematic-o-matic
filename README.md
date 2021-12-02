@@ -42,6 +42,8 @@ While not necessarily a limitaiton, the current text-based interface is a bit cr
 
 ## Media
 
+Demonstration video: TODO: add YouTube link
+
 Schematic-o-matic instrumented breadboard and Arduino Due:
 ![](https://github.com/nickbild/schematic-o-matic/raw/main/media/breadboard_w_arduino_sm.jpg)
 
