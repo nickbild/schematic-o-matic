@@ -32,7 +32,7 @@ TODO: insert schematic here
 
 ## Limitations
 
-For continuity testing to be accurate, certain components need to be removed before testing continuity.  While this is inconvenient, I believe that the benefit of having all wires mapped out so quickly (and guaranteed to be error free!) is still a big win.  I have built a number of very complex breadboard circuits (see [Vectron VGA](https://github.com/nickbild/vectron_vga), for example) that took days to trace all the wires for the schematic (then cross my fingers hoping I didn't make even one mistake).  A tool like this would have saved me many, many hours of unpleasant work.
+For continuity testing to be accurate, certain components need to be removed before testing.  While this is inconvenient, I believe that the benefit of having all wires mapped out so quickly (and guaranteed to be error free!) is still a big win.  I have built a number of very complex breadboard circuits (see [Vectron VGA](https://github.com/nickbild/vectron_vga), for example) that took days to trace all the wires for the schematic (then cross my fingers hoping I didn't make even one mistake).  A tool like this would have saved me many, many hours of unpleasant work.
 
 The schematics will be accurate, but may not be pretty.  I have implemented wires as straight lines between connection points.  I think they could be made to run parallel to one another, rather than randomly overlap, it would just take a more complex algorithm with some awareness of other wiring.
 
